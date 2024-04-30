@@ -8,27 +8,39 @@ DEFAULT_MATERIALS="RenderChunk Clouds Sky EndSky LegacyCubemap Actor SunMoon"
 #  NAMES     = Names/descriptions for options
 #  MATERIALS = Materials to compile for options
 SUBPACK_OPTIONS=(
-  ROUNDED_CLOUDS
-  CHUNK_ANIM
-  NO_WAVE_NO_FOG
-  NO_FOG
-  NO_WAVE
+  REALISTIC
+  HRS
+  PCO
+  CRC
+  UNBOUND
+  REBORN
+  RENEWED
+  SOFT_CLOUDS
+  VANILLA_CLOUDS
   DEFAULT
 )
 SUBPACK_NAMES=(
-  "Rounded Clouds"
-  "Chunk loading animation"
-  "No wave, No fog"
-  "No fog"
-  "No wave"
+  "Realistic"
+  "HRS"
+  "PCO"
+  "CRC"
+  "Unbound"
+  "Reborn"
+  "Renewed"
+  "Soft Clouds"
+  "Vanilla Clouds"
   "Default"
 )
 SUBPACK_MATERIALS=(
-  "Clouds"
-  "RenderChunk"
-  "RenderChunk"
-  "RenderChunk"
-  "RenderChunk"
+  "Clouds RenderChunk"
+  "Clouds RenderChunk"
+  "Clouds RenderChunk"
+  "Clouds RenderChunk"
+  "Clouds RenderChunk"
+  "Clouds RenderChunk"
+  "Clouds RenderChunk"
+  "Clouds RenderChunk"
+  "Clouds RenderChunk"
   ""
 )
 
