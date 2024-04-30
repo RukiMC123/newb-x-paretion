@@ -127,6 +127,12 @@ void main() {
     fogColor.a = mix(fogColor.a, 1.0, NL_GODRAY*nlRenderGodRayIntensity(cPos, worldPos, t, uv1, relativeDist, FogColor.rgb));
   #endif
 
+  if (underWater) {
+#ifdef NL_UNDER_WATER_FOG_INTENSITY
+fogColor.a = NL_UNDER_WATER_FOG_INTENSITY;
+#endif
+}
+
   if (nether) {
     // blend fog with void color
     fogColor.rgb = colorCorrectionInv(FogColor.rgb);
