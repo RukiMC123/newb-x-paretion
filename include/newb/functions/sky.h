@@ -93,11 +93,11 @@ vec3 getSunBloom(float viewDirX, vec3 horizonEdgeCol, vec3 FOG_COLOR) {
 
 // end sky
 vec3 renderEndSky(vec3 horizonCol, vec3 zenithCol, vec3 v, float t){
-  vec3 sky = vec3(0.0);
+  vec3 sky = vec3(0.0, 0.0, 0.0);
   v.y = smoothstep(0.0,1.7,abs(v.y)); // sky 2
   v.x += 0.03*sin(5.0*v.y - t + v.z);
 
-  float a = atan(v.x,v.z);
+  float a = atan2(v.x,v.z);
 
   float s = sin(a*3.0 + 0.2*t);
   s = s*s;
